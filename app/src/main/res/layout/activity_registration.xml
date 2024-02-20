@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg" />
+
+    <EditText
+        android:id="@+id/first_name_reg"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Імʼя"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <EditText
+        android:id="@+id/second_name_reg"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Прізвище"
+        android:inputType="text"
+        android:textAlignment="textEnd"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <EditText
+        android:id="@+id/login_log"
+        android:layout_width="315dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Логін"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name_reg"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/mail_reg"
+        android:layout_width="315dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Електронна адреса"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_log"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/password_log"
+        android:layout_width="315dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_reg"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <ImageButton
+        android:id="@+id/log_btn"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_log"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Зареєструватись"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/log_btn"
+        app:layout_constraintEnd_toEndOf="@+id/log_btn"
+        app:layout_constraintStart_toStartOf="@+id/log_btn"
+        app:layout_constraintTop_toTopOf="@+id/log_btn" />
+
+    <ImageButton
+        android:id="@+id/back_btn_log"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

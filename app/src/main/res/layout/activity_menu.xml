@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="429dp"
+        android:layout_height="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        app:srcCompat="@drawable/play_23" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="429dp"
+        android:layout_height="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:srcCompat="@drawable/ryanair_big" />
+
+    <ImageButton
+        android:id="@+id/user_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/user_ic"
+        android:onClick="ButtonClick"/>
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/bg_menu"
+        android:layout_width="553dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sea" />
+
+    <ImageButton
+        android:id="@+id/close_menu_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_btn"
+        app:layout_constraintEnd_toEndOf="@+id/menu_btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/menu_btn"
+        app:layout_constraintTop_toTopOf="@+id/menu_btn"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/close" />
+
+    <ImageButton
+        android:id="@+id/acc_btn"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:onClick="ButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/menu_btn"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/acc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Акаунт"
+        android:textColor="#040000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/acc_btn"
+        app:layout_constraintEnd_toEndOf="@+id/acc_btn"
+        app:layout_constraintStart_toStartOf="@+id/acc_btn"
+        app:layout_constraintTop_toTopOf="@+id/acc_btn" />
+
+    <ImageButton
+        android:id="@+id/search_fly_btn"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/acc_btn"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/search_fly_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Пошук рейсів"
+        android:textColor="#040000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/search_fly_btn"
+        app:layout_constraintEnd_toEndOf="@+id/search_fly_btn"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/search_fly_btn"
+        app:layout_constraintTop_toTopOf="@+id/search_fly_btn" />
+
+    <ImageButton
+        android:id="@+id/settings_btn"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/search_fly_btn"
+        app:layout_constraintVertical_bias="0.053"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/settings_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Налаштування"
+        android:textColor="#040000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btn"
+        app:layout_constraintEnd_toEndOf="@+id/settings_btn"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/settings_btn"
+        app:layout_constraintTop_toTopOf="@+id/settings_btn" />
+
+    <ImageButton
+        android:id="@+id/user_menu_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="ButtonClick"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu_btn"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/user_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/user_ic" />
+
+    <ImageButton
+        android:id="@+id/choose_air_btn"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/settings_btn"
+        app:layout_constraintVertical_bias="0.104"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/choose_air_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Вибір аеропорту"
+        android:textColor="#040000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_air_btn"
+        app:layout_constraintEnd_toEndOf="@+id/choose_air_btn"
+        app:layout_constraintStart_toStartOf="@+id/choose_air_btn"
+        app:layout_constraintTop_toTopOf="@+id/choose_air_btn" />
+
+    <ImageButton
+        android:id="@+id/my_tickets_btn"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/choose_air_btn"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/empty_btn" />
+
+    <TextView
+        android:id="@+id/my_tickets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Мої квитки"
+        android:textColor="#040000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/my_tickets_btn"
+        app:layout_constraintEnd_toEndOf="@+id/my_tickets_btn"
+        app:layout_constraintStart_toStartOf="@+id/my_tickets_btn"
+        app:layout_constraintTop_toTopOf="@+id/my_tickets_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
